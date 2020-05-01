@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B185364245CE9CC00A7BB5B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B185363245CE9CC00A7BB5B /* Alamofire.framework */; };
+		5B185365245CE9CC00A7BB5B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B185363245CE9CC00A7BB5B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B8F1DD4245398160007B4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DD3245398160007B4A1 /* AppDelegate.swift */; };
 		5B8F1DD6245398160007B4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DD5245398160007B4A1 /* SceneDelegate.swift */; };
 		5B8F1DD8245398160007B4A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DD7245398160007B4A1 /* ViewController.swift */; };
@@ -14,21 +16,19 @@
 		5B8F1DDD245398190007B4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8F1DDC245398190007B4A1 /* Assets.xcassets */; };
 		5B8F1DE0245398190007B4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8F1DDE245398190007B4A1 /* LaunchScreen.storyboard */; };
 		5B8F1DE8245398600007B4A1 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B8F1DE72453985F0007B4A1 /* Cartfile */; };
-		5B8F1DEB2453990F0007B4A1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8F1DEA2453990F0007B4A1 /* Alamofire.framework */; };
-		5B8F1DEC2453990F0007B4A1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8F1DEA2453990F0007B4A1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B8F1DF12453994D0007B4A1 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DEE2453994C0007B4A1 /* CategoriesLoader.swift */; };
 		5B8F1DF22453994D0007B4A1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DEF2453994C0007B4A1 /* CategoryCell.swift */; };
 		5B8F1DF32453994D0007B4A1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F1DF02453994C0007B4A1 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5B8F1DED2453990F0007B4A1 /* Embed Frameworks */ = {
+		5B185366245CE9CC00A7BB5B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5B8F1DEC2453990F0007B4A1 /* Alamofire.framework in Embed Frameworks */,
+				5B185365245CE9CC00A7BB5B /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B185363245CE9CC00A7BB5B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		5B8F1DD0245398160007B4A1 /* 14_JSON_Defaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14_JSON_Defaults.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8F1DD3245398160007B4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8F1DD5245398160007B4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B8F1DEB2453990F0007B4A1 /* Alamofire.framework in Frameworks */,
+				5B185364245CE9CC00A7BB5B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +102,7 @@
 		5B8F1DE92453990F0007B4A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B185363245CE9CC00A7BB5B /* Alamofire.framework */,
 				5B8F1DEA2453990F0007B4A1 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -116,7 +118,7 @@
 				5B8F1DCC245398160007B4A1 /* Sources */,
 				5B8F1DCD245398160007B4A1 /* Frameworks */,
 				5B8F1DCE245398160007B4A1 /* Resources */,
-				5B8F1DED2453990F0007B4A1 /* Embed Frameworks */,
+				5B185366245CE9CC00A7BB5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +335,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = 14_JSON_Defaults/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -356,6 +359,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = 14_JSON_Defaults/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
